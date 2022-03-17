@@ -1,0 +1,24 @@
+
+
+$grid-breakpoints: (
+		xs: 0,
+		sm: 576px,
+		md: 796px,
+		lg: 992px,
+		xl: 1200px,
+		xxl: 1400px
+);
+
+/*Подключение сетки*/
+@import "node_modules/bootstrap/scss/functions";
+@import "node_modules/bootstrap/scss/variables";
+@import "node_modules/bootstrap/scss/mixins/breakpoints";
+@import "node_modules/bootstrap/scss/mixins/container";
+@import "node_modules/bootstrap/scss/mixins/grid";
+@import "node_modules/bootstrap/scss/mixins/utilities";
+@import "node_modules/bootstrap/scss/utilities";
+//@import "node_modules/bootstrap/scss/mixins/clearfix";
+//@import "node_modules/bootstrap/scss/helpers/clearfix";
+//@import "node_modules/bootstrap/scss/mixins/transition";
+//@import "node_modules/bootstrap/scss/carousel";
+
