@@ -1,0 +1,441 @@
+<!DOCTYPE HTML>
+<html lang="ru">
+<head>
+	<meta charset="utf-8">
+	<title>Bootstrap</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="css/bootstrap-reboot.css">
+	<link rel="stylesheet" href="css/main-styles.css">
+	<link rel="stylesheet" href="fonts/Montserrat/stylesheet.css">
+	<!-- Add the slick-theme.css if you want default styling -->
+	<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+	<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick-theme.css"/>
+	<!-- Add the slick-theme.css if you want default styling -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js">
+	</script>
+</head>
+<body>
+
+<header>
+	<div class="user-container">
+		<div class="navigation-and-logo">
+			<div class="navigation__logo">
+				<div class="wrapper__logo">
+					<img src="img/header/logo.png" class="logo" alt="Логотип">
+				</div>
+			</div>
+			<div class="navigation__burger-icon burger-icon">
+				<input type="checkbox" id="menu_checkbox">
+				<label for="menu_checkbox">
+					<div class="burger-item burger-icon_top"></div>
+					<div class="burger-item burger-icon_middle"></div>
+					<div class="burger-item burger-icon_bottom"></div>
+				</label>
+			</div>
+			<div class="navigation__nav-menu burger__icon">
+				<div class="nav-panel">
+					<a class="nav-item" href="about.html">Агентство</a>
+					<a class="nav-item" href="news.html">новости</a>
+					<a class="nav-item" href="info.html">информация</a>
+					<a class="nav-item" href="index.html">Кассы и офисы продаж</a>
+					<a class="nav-item" href="contacts.html">Контакты</a>
+				</div>
+				<button class="button__close"></button>
+			</div>
+		</div>
+		<div class="header-title justify-content-center">
+			<h1>Подбор и бронирование авиабилетов</h1>
+			<p>Предлагаем билеты по всем направлениям</p>
+		</div>
+		<div class="form-search align-items-center">
+			<div class="input__location">
+				<label for="departure">Пункт отправления
+					<input id="departure" class="departure" type="text" placeholder="Откуда"
+						   data-border-input-first>
+					<button class="reverse"></button>
+				</label>
+				<label for="destination">Пункт назначения
+					<input id="destination" class="destination" type="text" placeholder="Куда">
+				</label>
+			</div>
+			<div class="input__date">
+				<label for="date_begin">Дата отправления
+					<span class="input__wrapper">
+						<input id="date_begin" class="date_begin" type="date" placeholder="" value="21.05.2021"></span>
+				</label>
+				<label for="date_end">Дата обратно
+					<span class="input__wrapper">
+						<input id="date_end" class="date_end" type="date" placeholder="" value="25.05.2021"></span>
+				</label>
+			</div>
+			<div class="input__amount">
+				<label id="amount_id" for="amount">Пассажиров
+					<input id="amount" class="" type="number" min="1" max="10" placeholder="1" value="1"
+						   list="defaultNumbers">
+					<datalist id="defaultNumbers">
+						<option value="1">
+						<option value="2">
+						<option value="3">
+						<option value="4">
+						<option value="5">
+						<option value="6">
+						<option value="7">
+						<option value="8">
+						<option value="9">
+					</datalist>
+				</label>
+				<label for="amount__button_find">
+					<a href="#" id="offer">Договор-оферта</a>
+					<input id="amount__button_find" type="submit" class="form-search__button-find"
+						   data-border-input-last value="Найти билеты">
+				</label>
+			</div>
+		</div>
+		<div class="our-location">
+			<p class="location-city">Красноярск, ул. Взлетная, 26 "Б" 8 (391) 282-89-08</p>
+			<p class="location-airport">Красноярск, Аэропорт "Черемшанка", тел. 8 (391) 285-19-58</p>
+		</div>
+		<div class="contacts align-items-center">
+			<div class="contact-payment">
+				<span>Принимаем к оплате:</span>
+				<div class="cards">
+					<img src="./img/header/cards-sprite.png" alt="">
+				</div>
+			</div>
+			<div class="contact-text">
+				<span>Кроме того, можете оплатить забронированные билеты
+наличными в любом офисе продаж агентства «Регион24»</span>
+			</div>
+			<div class="contact-number">
+				<a href="#"><img src="img/header/icon-viber.png" class="col-1 contact-item viber"></a>
+				<a href="#"><img src="img/header/icon-whatsapp.png" class="col-1 contact-item WA"></a>
+				<a href="tel:+79029828908" class="number">+7 902-982-8908</a>
+			</div>
+		</div>
+		<div class="slider__wrapper">
+			<div class="slider single-item">
+				<a href="#" class="slide">
+					<img src="img/header/slider-img1.png" alt="">
+				</a>
+				<a href="#" class="slide">
+					<img src="img/header/slider-img1.png" alt="">
+				</a>
+			</div>
+		</div>
+	</div>
+</header>
+<main>
+	<section class="start-page row">
+		<div class="container">
+			<div class="start-page__inner">
+				<div class="start-page__news">
+					<h2 class="title">Новости</h2>
+					<div class="start-page__slider">
+						<a href="#" class="slider-item">
+							<img src="img/start-page/1.png" alt="">
+							<p>
+								Прямые рейсы:
+								Кишинев-Москва
+								Кишинев -Санкт-Петербург
+							</p>
+						</a>
+						<a href="#" class="slider-item">
+							<img src="img/start-page/2.png" alt="">
+							<p>
+								Субсидированные
+								авиабилеты в Крым
+							</p>
+						</a>
+						<a href="#" class="slider-item">
+							<img src="img/start-page/3.png" alt="">
+							<p>
+								Авиакомпания КрасАвиа ведет
+								продажу на рейсы:
+								ЭК-183 Красноярск -Барнаул и
+								ЭК-184 Барнаул- Краноярск.
+							</p>
+						</a>
+						<a href="#" class="slider-item">
+							<img src="img/start-page/4.png" alt="">
+							<p>
+								Авиакомпания "ЮТэйр" запускает
+								со 02 мая новый рейс по напровлению:
+								Тюмень-Санкт-Петербург-Тюмень
+							</p>
+						</a>
+						<a href="#" class="slider-item">
+							<img src="img/start-page/4.png" alt="">
+							<p>
+								Авиакомпания "ЮТэйр" запускает
+								со 02 мая новый рейс по напровлению:
+								Тюмень-Санкт-Петербург-Тюмень
+							</p>
+						</a>
+						<a href="#" class="slider-item">
+							<img src="img/start-page/3.png" alt="">
+							<p>
+								Авиакомпания КрасАвиа ведет
+								продажу на рейсы:
+								ЭК-183 Красноярск -Барнаул и
+								ЭК-184 Барнаул- Краноярск.
+							</p>
+						</a>
+						<a href="#" class="slider-item">
+							<img src="img/start-page/2.png" alt="">
+							<p>
+								Субсидированные
+								авиабилеты в Крым
+							</p>
+						</a>
+						<a href="#" class="slider-item">
+							<img src="img/start-page/1.png" alt="">
+							<p>
+								Прямые рейсы:
+								Кишинев-Москва
+								Кишинев -Санкт-Петербург
+							</p>
+						</a>
+					</div>
+				</div>
+				<div class="start-page-table-information">
+					<h2 class="title">Кассы и офисы продаж</h2>
+					<div class="registration-select">
+						<div class="pick__element select-location">
+							<label class="select__button active" for="allCity">Все
+								<input id="allCity" type="radio" name="selected-location"
+									   class="selected-radio">
+							</label>
+							<label class="select__button" for="Krasnoyarsk">Красноярск
+								<input id="Krasnoyarsk" type="radio" name="selected-location"
+									   class="selected-radio" data-active="false">
+							</label>
+							<label class="select__button" for="KrasnoyarskRegion" data-active="false">Красноярский район
+								<input id="KrasnoyarskRegion" type="radio" name="selected-location"
+									   class="selected-radio" data-active="false">
+							</label>
+						</div>
+						<div class="pick__element select-type">
+							<label class="select__button active" for="allType">Все
+								<input id="allType" type="radio" name="selected-type"
+									   class="selected-radio">
+							</label>
+							<label class="select__button" for="AviaType">Авиа
+								<input id="AviaType" type="radio" name="selected-type"
+									   class="selected-radio" data-type="avia">
+								<span class="select__button__avia"></span>
+							</label>
+							<label class="select__button" for="TrainType">Ж/Д
+								<input id="TrainType" type="radio" name="selected-type"
+									   class="selected-radio" data-type="train">
+								<span class="select__button__train"></span>
+							</label>
+						</div>
+					</div>
+					<div class="registration-result">
+						<table class="table-result" data-chosed="Krasnoyarsk">
+							<tr>
+								<th class="table__title">
+									Красноярск
+								</th>
+							</tr>
+							<tr class="tr__row selected-city" data-type-avia="true" data-type-train="true">
+								<td class="table__address">
+									ул. Взлетная, 26 "Б"
+								</td>
+								<td class="table__contact-details">
+									<a href="tel:3912828908" class="new-line details__number-date">(391) 282-89-08</a>
+									<span class="new-line details__work-mode">
+													режим работы кассы:
+												пн-пт. с 08.30-9.30, обед 13.00-13.30
+												сб. 10.00-16.00, обед 13.00-13.30
+												</span>
+									<span class="new-line details__other-info">
+													ТЕЛ ДЛЯ СВЯЗИ +7 (391) 282-89-08
+												с 08.30-19.30 перерыв 13.00-13.30
+												</span>
+								</td>
+								<td class="table__email">
+									<a href="mailto:sale@04kja.ru" class="cell-email">sale@04kja.ru</a>
+								</td>
+								<td class="table__icon-type">
+									<span class="icon-item icon-airplane"></span>
+									<span class="icon-item icon-train"></span>
+								</td>
+							</tr>
+							<tr class="tr__row selected-city" data-type-avia="true" data-type-train="true">
+								<td class="table__address">
+									Аэропорт «Черемшанка»
+								</td>
+								<td class="table__contact-details">
+									<a href="tel:3912851958" class="new-line details__number-date">(391) 285-19-58</a>
+									<span class="new-line details__work-mode">
+												режим работы кассы:
+												пн-пт. с 08.00-17.00, обед 13.00-13.30
+												сб-вс. выходной
+												</span>
+									<span class="new-line details__other-info"></span>
+								</td>
+								<td class="table__email">
+									<a href="mailto:chrm@04kja.ru" class="cell-email">chrm@04kja.ru</a>
+								</td>
+								<td class="table__icon-type">
+									<span class="icon-item icon-airplane"></span>
+									<span class="icon-item icon-train"></span>
+								</td>
+							</tr>
+							<tr class="tr__row selected-city" data-type-avia="true" data-type-train="false">
+								<td class="table__address">
+									ул. 9 Мая, 46, офис 1а
+									(остановка «1й микрорайон»),
+									ООО «Лайнер»
+								</td>
+								<td class="table__contact-details">
+												<a href="tel:3912535115" class="new-line details__number-date">
+													(391) 253-51-15
+												</a>
+									<span class="new-line details__work-mode"></span>
+									<span class="new-line details__other-info"></span>
+								</td>
+								<td class="table__email">
+									<a href="mailto:" class="cell-email"> </a>
+								</td>
+								<td class="table__icon-type">
+									<span class="icon-item icon-airplane"></span>
+									<span class="icon-item icon-train disabled"></span>
+								</td>
+							</tr>
+						</table>
+						<table class="table-result" data-chosed="KrasnoyarskRegion">
+							<tr>
+								<th class="table__title">
+									Красноярский край
+								</th>
+							</tr>
+							<tr class="tr__row selected-city" data-type-avia="true" data-type-train="false">
+								<td class="table__address">
+									п. Диксон, Аэропорт
+								</td>
+								<td class="table__contact-details">
+												<a href="tel:89607552324" class="new-line details__number-date">
+													8 (960) 755-23-24
+												</a>
+									<span class="new-line details__work-mode"></span>
+									<span class="new-line details__other-info"></span>
+								</td>
+								<td class="table__email">
+									<a href="mailto:dix@04kja.ru" class="cell-email">dix@04kja.ru</a>
+								</td>
+								<td class="table__icon-type">
+									<span class="icon-item icon-airplane"></span>
+									<span class="icon-item icon-train disabled"></span>
+								</td>
+							</tr>
+							<tr class="tr__row selected-city" data-type-avia="true" data-type-train="true">
+								<td class="table__address">
+									п. Богучаны, Аэропорт,
+									ул. Аэровокзальная, 28
+								</td>
+								<td class="table__contact-details">
+												<a href="tel:89538530517" class="new-line details__number-date">
+													8 (953) 853-05-17
+												</a>
+									п. Богучаны
+									<span class="new-line details__work-mode">
+													режим работы кассы:
+												пн-пт с 09.00 - 16.00
+												обед с 13.00 - 13.30
+												сб-вс. выходной
+												</span>
+									<span class="new-line details__other-info"></span>
+								</td>
+								<td class="table__email">
+									<a href="mailto:boch@04kja.ru" class="cell-email">boch@04kja.ru</a>
+								</td>
+								<td class="table__icon-type">
+									<span class="icon-item icon-airplane"></span>
+									<span class="icon-item icon-train"></span>
+								</td>
+							</tr>
+							<tr class="tr__row selected-city" data-type-avia="true" data-type-train="true">
+								<td class="table__address">
+									п. Бор, Аэропорт
+									«Подкаменная Тунгуска»
+								</td>
+								<td class="table__contact-details">
+												<a href="tel:89029912416" class="new-line details__number-date">
+													8 (902) 991-24-16
+												</a>
+									п. Бор
+									<span class="new-line details__work-mode">режим работы кассы:
+												вт.,ср. 8.00-16.00 обед 13.00-14.00
+												вт.,чт 09.00-19.00 обед 12.00.-13.00
+												пт.,сб.,вс. выходной</span>
+									<span class="new-line details__other-info"></span>
+								</td>
+								<td class="table__email">
+									<a href="mailto:pts-ap@04kja.ru" class="cell-email">pts-ap@04kja.ru</a>
+								</td>
+								<td class="table__icon-type">
+									<span class="icon-item icon-airplane"></span>
+									<span class="icon-item icon-train"></span>
+								</td>
+							</tr>
+						</table>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+</main>
+<footer>
+	<div class="container footer__container">
+		<div class="background-plane"></div>
+		<div class="map">
+			<iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3Affafdb210d70b993cbdcc56e746f708d1b0ca6672cc0ebd76071a75b73cac138&amp;source=constructor"
+					width="1116" height="385" frameborder="0"></iframe>
+		</div>
+		<div class="navigation__nav-menu">
+			<div class="nav-panel">
+				<a class="nav-item" href="about.html">Агентство</a>
+				<a class="nav-item" href="news.html">новости</a>
+				<a class="nav-item" href="info.html">информация</a>
+				<a class="nav-item" href="index.html">Кассы и офисы продаж</a>
+				<a class="nav-item" href="contacts.html">Контакты</a>
+			</div>
+		</div>
+		<div class="other-info">
+			<div class="navigation__logo">
+				<div class="wrapper__logo">
+					<img src="img/header/logo.png" class="logo" alt="Логотип">
+				</div>
+			</div>
+			<p class="other-info_about-company">
+				<span class="wrapper__text">ООО «Регион24» — дешевые авиабилеты из Красноярска.
+							Онлайн-заказ и бронирование железнодорожных,
+							авиа и автобусных билетов, авиакассы Красноярска.
+				</span>
+			</p>
+			<div class="other-info_location-number">
+				<span>
+					<span class="new-line">Горячая линия :</span>
+					8 (391) 2 777 124; 8 (391) 255-38-25
+				</span>
+				<span>
+					<span class="new-line">Центральный офис:</span>
+					г. Красноярск, ул. Взлетная 26Б
+				</span>
+			</div>
+			<div class="other-info_copyright">
+				<span class="wrapper__text">Бронирование авиабилетов из Красноярска © ООО «Регион24», 2018.</span>
+				<img src="./img/footer/footer-logo-tkp.png" alt="ТКП">
+			</div>
+		</div>
+	</div>
+</footer>
+
+<!--Slick-->
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+<script src="index.js"></script>
+
+</body>
+</html>

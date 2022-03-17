@@ -1,0 +1,249 @@
+<!DOCTYPE HTML>
+<html lang="ru">
+<head>
+	<meta charset="utf-8">
+	<title>Bootstrap</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="css/bootstrap-reboot.css">
+	<link rel="stylesheet" href="css/main-styles.css">
+	<link rel="stylesheet" href="fonts/Montserrat/stylesheet.css">
+	<!-- Add the slick-theme.css if you want default styling -->
+	<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+	<!-- Add the slick-theme.css if you want default styling -->
+	<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js">
+	</script>
+</head>
+<body>
+
+<header>
+	<div class="user-container">
+		<div class="navigation-and-logo">
+			<div class="navigation__logo">
+				<div class="wrapper__logo">
+					<img src="img/header/logo.png" class="logo" alt="Логотип">
+				</div>
+			</div>
+			<div class="navigation__burger-icon burger-icon">
+				<input type="checkbox" id="menu_checkbox">
+				<label for="menu_checkbox">
+					<div class="burger-item burger-icon_top"></div>
+					<div class="burger-item burger-icon_middle"></div>
+					<div class="burger-item burger-icon_bottom"></div>
+				</label>
+			</div>
+			<div class="navigation__nav-menu burger__icon">
+				<div class="nav-panel">
+					<a class="nav-item" href="about.html">Агентство</a>
+					<a class="nav-item" href="news.html">новости</a>
+					<a class="nav-item" href="info.html">информация</a>
+					<a class="nav-item" href="index.html">Кассы и офисы продаж</a>
+					<a class="nav-item" href="contacts.html">Контакты</a>
+				</div>
+				<button class="button__close"></button>
+			</div>
+		</div>
+		<div class="header-title justify-content-center">
+			<h1>Подбор и бронирование авиабилетов</h1>
+			<p>Предлагаем билеты по всем направлениям</p>
+		</div>
+		<div class="form-search align-items-center">
+			<div class="input__location">
+				<label for="departure">Пункт отправления
+					<input id="departure" class="departure" type="text" placeholder="Откуда"
+						   data-border-input-first>
+					<button class="reverse"></button>
+				</label>
+				<label for="destination">Пункт назначения
+					<input id="destination" class="destination" type="text" placeholder="Куда">
+				</label>
+			</div>
+			<div class="input__date">
+				<label for="date_begin">Дата отправления
+					<span class="input__wrapper">
+						<input id="date_begin" class="date_begin" type="date" placeholder="" value="21.05.2021"></span>
+				</label>
+				<label for="date_end">Дата обратно
+					<span class="input__wrapper">
+						<input id="date_end" class="date_end" type="date" placeholder="" value="25.05.2021"></span>
+				</label>
+			</div>
+			<div class="input__amount">
+				<label id="amount_id" for="amount">Пассажиров
+					<input id="amount" class="" type="number" min="1" max="10" placeholder="1" value="1"
+						   list="defaultNumbers">
+					<datalist id="defaultNumbers">
+						<option value="1">
+						<option value="2">
+						<option value="3">
+						<option value="4">
+						<option value="5">
+						<option value="6">
+						<option value="7">
+						<option value="8">
+						<option value="9">
+					</datalist>
+				</label>
+				<label for="amount__button_find">
+					<a href="#" id="offer">Договор-оферта</a>
+					<input id="amount__button_find" type="submit" class="form-search__button-find"
+						   data-border-input-last value="Найти билеты">
+				</label>
+			</div>
+		</div>
+		<div class="our-location">
+			<p class="location-city">Красноярск, ул. Взлетная, 26 "Б" 8 (391) 282-89-08</p>
+			<p class="location-airport">Красноярск, Аэропорт "Черемшанка", тел. 8 (391) 285-19-58</p>
+		</div>
+		<div class="contacts align-items-center">
+			<div class="contact-payment">
+				<span>Принимаем к оплате:</span>
+				<div class="cards">
+					<img src="./img/header/cards-sprite.png" alt="">
+				</div>
+			</div>
+			<div class="contact-text">
+				<span>Кроме того, можете оплатить забронированные билеты
+наличными в любом офисе продаж агентства «Регион24»</span>
+			</div>
+			<div class="contact-number">
+				<a href="#"><img src="img/header/icon-viber.png" class="col-1 contact-item viber"></a>
+				<a href="#"><img src="img/header/icon-whatsapp.png" class="col-1 contact-item WA"></a>
+				<a href="tel:+79029828908" class="number">+7 902-982-8908</a>
+			</div>
+		</div>
+		<div class="slider__wrapper">
+			<div class="slider single-item">
+				<a href="#" class="slide">
+					<img src="img/header/slider-img1.png" alt="">
+				</a>
+				<a href="#" class="slide">
+					<img src="img/header/slider-img1.png" alt="">
+				</a>
+			</div>
+		</div>
+	</div>
+</header>
+<main>
+	<section>
+		<div class="container">
+			<div class="slider__wrapper">
+				<div class="news">
+					<h2 class="title">Новости</h2>
+					<div class="news__elements">
+						<a href="#" class="news-item ">
+							<span class="news-item__inner">
+								<img src="img/news/1.png" alt="">
+														<p>Черная пятница SU распродажа
+															с 26.11.21 по 28.11.21 50%</p>
+							</span>
+						</a>
+						<a href="#" class="news-item">
+							<span class="news-item__inner">
+								<img src="img/news/2.png" alt="">
+								<p>"Аэрофлот" начал распродажу билетов
+														по России си скидкой до 50%</p></span>
+						</a>
+						<a href="#" class="news-item">
+							<span class="news-item__inner">
+								<img src="img/news/3.png" alt="">
+								<p>Египет</p></span>
+						</a>
+						<a href="#" class="news-item">
+							<span class="news-item__inner">
+								<img src="img/news/4.png" alt="">
+								<p>Открытие рейса из Новосибирска
+														в Кзахстан</p></span>
+						</a>
+						<a href="#" class="news-item">
+							<span class="news-item__inner"><img src="img/news/5.png" alt="">
+														<p>КРАСАВИА</p></span>
+						</a>
+						<a href="#" class="news-item">
+							<span class="news-item__inner">
+								<img src="img/news/6.png" alt="">
+								<p>"Аэрофлот" начал распродажу билетов
+														по России си скидкой до 50%</p></span>
+						</a>
+						<a href="#" class="news-item">
+							<span class="news-item__inner">
+								<img src="img/news/7.png" alt="">
+								<p>У нас для Вас прекрасные новости
+														для путешествия с семьей</p></span>
+						</a>
+						<a href="#" class="news-item">
+							<span class="news-item__inner">
+								<img src="img/news/8.png" alt="">
+								<p>Авиакомпания "НордСтар" открыла
+														продажу на рейсы зимней
+														навигации 2021/2022ы</p></span>
+						</a>
+					</div>
+					<ul class="news__dots">
+						<li class="dots_wrapper"><span class="dot-item dot-active">1</span></li>
+						<li class="dots_wrapper"><span class="dot-item">2</span></li>
+						<li class="dots_wrapper"><span class="dot-item">3</span></li>
+						<li class="dots_wrapper"><span class="dot-item">4</span></li>
+						<li class="dots_wrapper"><span class="dot-item">5</span></li>
+						<li class="dots_wrapper"><span class="dot-item">6</span></li>
+						<li class="dots_wrapper"><span class="dot-item">7</span></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</section>
+</main>
+<footer>
+	<div class="container footer__container">
+		<div class="background-plane"></div>
+		<div class="map">
+			<iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3Affafdb210d70b993cbdcc56e746f708d1b0ca6672cc0ebd76071a75b73cac138&amp;source=constructor"
+					width="1116" height="385" frameborder="0"></iframe>
+		</div>
+		<div class="navigation__nav-menu">
+			<div class="nav-panel">
+				<a class="nav-item" href="about.html">Агентство</a>
+				<a class="nav-item" href="news.html">новости</a>
+				<a class="nav-item" href="info.html">информация</a>
+				<a class="nav-item" href="index.html">Кассы и офисы продаж</a>
+				<a class="nav-item" href="contacts.html">Контакты</a>
+			</div>
+		</div>
+		<div class="other-info">
+			<div class="navigation__logo">
+				<div class="wrapper__logo">
+					<img src="img/header/logo.png" class="logo" alt="Логотип">
+				</div>
+			</div>
+			<p class="other-info_about-company">
+				<span class="wrapper__text">ООО «Регион24» — дешевые авиабилеты из Красноярска.
+							Онлайн-заказ и бронирование железнодорожных,
+							авиа и автобусных билетов, авиакассы Красноярска.
+				</span>
+			</p>
+			<div class="other-info_location-number">
+				<div>
+					<span class="new-line">Горячая линия :</span>
+					<a href="tel:83912777124" class="footer__number">8 (391) 2 777 124</a>;
+					<a href="tel:83912553825" class="footer__number">8 (391) 255-38-25</a>
+				</div>
+				<div>
+					<span class="new-line">Центральный офис:</span>
+					г. Красноярск, ул. Взлетная 26Б
+				</div>
+			</div>
+			<div class="other-info_copyright">
+				<span class="wrapper__text">Бронирование авиабилетов из Красноярска © ООО «Регион24», 2018.</span>
+				<img src="./img/footer/footer-logo-tkp.png" alt="ТКП">
+			</div>
+		</div>
+	</div>
+</footer>
+
+<!--Slick-->
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js">
+</script>
+<script src="index.js"></script>
+
+</body>
+</html>
